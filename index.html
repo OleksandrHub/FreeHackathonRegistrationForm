@@ -12,8 +12,8 @@
     <form id="survey-form">
         <!-- label[for="name"]{Name: }>input[id="name" type="text" placeholder=""] -->
         <section>
-            <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Your full name"></label>
-            <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Your email"></label>
+            <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Your full name" required></label>
+            <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Your email" required></label>
             <label for="age" id="number-label">Age: <input id="number" type="number" min="16" max="99" placeholder="Your age"></label>
         </section>
         <section>
@@ -28,18 +28,16 @@
             <span>Type of participation</span>
             <label for="individual"><input type="radio" class="inline" name="participation" value="individual" id="individual"> Individual</label>
             <label for="team"><input type="radio" class="inline" name="participation" value="team" id="team"> Team</label>
-            <label for="technologies">Technologies
-                <select id="technologies">
-                    <option value="javascript">JavaScript</option>
-                    <option value="python">Python</option>
-                    <option value="java">Java</option>
-                    <option value="c++">C++</option>
-                    <option value="other">Other</option>
-                </select>
-            </label>
+            <span>Techoligues</span>
+            <label for="javascipt"><input type="checkbox" class="inline" name="tech" value="javascipt" id="javascipt"> Javascipt</label>
+            <label for="python"><input type="checkbox" class="inline" name="tech" value="python" id="python"> Python</label>
+            <label for="java"><input type="checkbox" class="inline" name="tech" value="java" id="java"> Java</label>
+            <label for="c++"><input type="checkbox" class="inline" name="tech" value="c++" id="c++"> C++</label>
+            <label for="c#"><input type="checkbox" class="inline" name="tech" value="c#" id="c#"> C#</label>
+            <label for="other"> <input type="checkbox" class="inline" name="tech" value="other" id="other"> Other</label>
         </section>
         <textarea>Your wishes or comments</textarea>
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit">Submit</button>
     </form>
 </body>
 </html>
